@@ -1,12 +1,14 @@
 import os
+import time
+
+# get time tick
+tick = int(time.time())
 
 # Check what is in the dir
 # listdir need a variable path -> current = os.getcwd()
-arr = os.listdir(os.getcwd())
-print(arr)
-
-for ar in arr:
-    print(ar)
+print("Output List:")
+array = os.listdir(os.getcwd())
+print(array)
 
 # open checking file (json?)
 # look for new files (for loop)
@@ -15,3 +17,14 @@ for ar in arr:
 
 
 #test dumping to json with timestamp
+print("\nOutput List inkl. Timestamps:")
+
+output = dict()
+
+for item in array:
+    output[item] = tick
+
+print output
+
+
+# test convert output to json
