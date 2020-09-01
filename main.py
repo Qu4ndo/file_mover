@@ -1,5 +1,6 @@
 import os
 import time
+import json
 
 # get time tick
 tick = int(time.time())
@@ -28,3 +29,5 @@ print output
 
 
 # test convert output to json
+json_string = json.dumps(output)
+print(json_string)
