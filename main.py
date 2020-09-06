@@ -2,6 +2,16 @@ import os
 import time
 import json
 
+"""
+Things to do before use:
+- edit remove_list
+- edit home_directory
+- edit directory
+- edit min_time (seconds)
+
+"""
+
+
 #ignore following items (modify if needed)
 remove_list = ['LICENSE', 'main.py', '.git', 'data.json', 'README.md', 'test']
 
