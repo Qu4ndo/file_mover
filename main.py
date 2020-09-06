@@ -9,9 +9,10 @@ remove_list = ['LICENSE', 'main.py', '.git', 'data.json', 'README.md']
 tick = int(time.time())
 
 # check what is in the dir
-    # listdir need a variable path -> current = os.getcwd()
+    # listdir need a directory path -> current = os.getcwd()
 print("Output List:")
 array = os.listdir(os.getcwd())
+# ignore remove_list items
 array = list(set(array).difference(set(remove_list)))
 print(array)
 
