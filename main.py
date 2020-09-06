@@ -11,10 +11,12 @@ print("Output List:")
 array = os.listdir(os.getcwd())
 print(array)
 
-# open checking file (json?)
-# look for new files (for loop)
-# if new file - move to second folder and get timestamp for new index (json file)
-# remove all old files from directory (for loop)
+# open data.json file
+# scan if new files appeared
+# move new files
+# remove old files (outdated)
+# save new files to data.json
+
 
 
 #test dumping to json with timestamp
