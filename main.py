@@ -46,7 +46,7 @@ print("\n")
 
 # move new files
 for item in item_not_in_data:
-    os.system("cp " + "\"" + home_directory + item + "\"" + " " + "\"" + directory + item + "\"")
+    os.system("cp -r " + "\"" + home_directory + item + "\"" + " " + "\"" + directory + item + "\"")
 
 # get time tick
 tick = int(time.time())
@@ -60,7 +60,7 @@ converted_data = converted_data.items()
 for item in converted_data:
     if item[1] < min_tick:
         print("Remove - " + item[0])
-        os.system("rm " + "\"" + home_directory + item[0] + "\"")
+        os.system("rm -r " + "\"" + home_directory + item[0] + "\"")
 
 #adding timestamp to dict
 output = dict()
